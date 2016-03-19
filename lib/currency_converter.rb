@@ -14,8 +14,6 @@ class CurrencyConverter
     currency_rate_1 = @rate_library.fetch(new_code)
     converted_amount_1 = currency_amount * currency_rate_1
 
-    converted_amount_2 = currency_amount * currency_rate_2
-
   end
 
 end

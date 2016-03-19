@@ -19,14 +19,20 @@ class CurrencyConverterTest < Minitest::Test
     assert_equal(rate_library, currency_converter_1.rate_library)
   end
 
-  def test_currency_conversion
+  def test_currency_conversion_dollar_to_euro
     currency = Currency.new(10.0, "USD")
     code = :EUR
     rate_library = {USD: 1.0, EUR: 0.74, JPY: 120.0}
     currency_conversion_1 = CurrencyConverter.new(rate_library)
     assert(currency_conversion_1.converter(currency, code))
+  end
 
-
+  def test_currency_conversion_yen_to_euro
+    currency = Currency.new(10.0, "JPY")
+    code = :EUR
+    rate_library = {USD: 1.0, EUR: 0.74, JPY: 120.0}
+    currency_conversion_1 = CurrencyConverter.new(rate_library)
+    yen_to_euro = currency_conversion_1.converter(currency, code)
   end
 
 end
