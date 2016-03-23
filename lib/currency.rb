@@ -1,3 +1,5 @@
+# require_relative '/currency.rb'
+
 class DifferentCurrencyCodeError < StandardError
   def message
     "Naw man, diff currencies. Bro."
@@ -35,6 +37,5 @@ class Currency
     rounded_amount = self.amount * number
     Currency.new(rounded_amount.round(2), self.code)
   end
-
 
 end

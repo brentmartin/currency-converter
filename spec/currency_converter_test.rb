@@ -2,6 +2,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 
 require_relative '../lib/currency_converter.rb'
+require_relative '../lib/currency.rb'
 
 class CurrencyConverterTest < Minitest::Test
 
