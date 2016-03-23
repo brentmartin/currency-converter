@@ -1,5 +1,3 @@
-require_relative '../bin/currency.rb'
-
 class CurrencyConverter
   attr_reader :rate_library
   def initialize(rate_library)

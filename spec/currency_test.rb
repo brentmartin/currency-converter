@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 
-require_relative '../bin/currency.rb'
+require_relative '../lib/currency.rb'
 
 class CurrencyTest < Minitest::Test
 

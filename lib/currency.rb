@@ -1,5 +1,3 @@
-
-
 class DifferentCurrencyCodeError < StandardError
   def message
     "Naw man, diff currencies. Bro."
